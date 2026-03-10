@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-turbopack)",
+      "Bash(find /c/Users/conne/OneDrive/Desktop/workspace/knathweb -type f \\\\\\( -name \"*.html\" -o -name \"*.css\" -o -name \"*.js\" \\\\\\) -exec wc -l {} +)",
+      "Bash(grep -c \"Creea Designs\" /c/Users/conne/OneDrive/Desktop/workspace/knathweb/en/*.html /c/Users/conne/OneDrive/Desktop/workspace/knathweb/hi/*.html)",
+      "Bash(grep -c \"particle-canvas\" /c/Users/conne/OneDrive/Desktop/workspace/knathweb/en/*.html /c/Users/conne/OneDrive/Desktop/workspace/knathweb/hi/*.html)",
+      "Bash(grep -c \"Kamal_Nath_Ji.jpg\" /c/Users/conne/OneDrive/Desktop/workspace/knathweb/en/*.html /c/Users/conne/OneDrive/Desktop/workspace/knathweb/hi/*.html)",
+      "Bash(grep -c \"lang-toggle\" /c/Users/conne/OneDrive/Desktop/workspace/knathweb/en/*.html /c/Users/conne/OneDrive/Desktop/workspace/knathweb/hi/*.html)",
+      "Bash(grep -roh 'src=\"\"[^\"\"]*\"\"' /c/Users/conne/OneDrive/Desktop/workspace/knathweb/en/*.html /c/Users/conne/OneDrive/Desktop/workspace/knathweb/hi/*.html)",
+      "Bash(grep -rc \"wikipedia.org\" /c/Users/conne/OneDrive/Desktop/workspace/knathweb/en/*.html /c/Users/conne/OneDrive/Desktop/workspace/knathweb/hi/*.html)"
+    ]
+  }
+}

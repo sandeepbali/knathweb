@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="छिंदवाड़ा - कमल नाथ की हृदयस्थली। नौ बार के सांसद और छिंदवाड़ा के कायाकल्प की अद्भुत कहानी।">
+  <title>छिंदवाड़ा - कमल नाथ | आधिकारिक वेबसाइट</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
+<body class="hindi">
+
+  <!-- Loading Screen -->
+  <div class="loader">
+    <div class="loader__emblem"></div>
+    <div class="loader__text">लोड हो रहा है...</div>
+  </div>
+
+  <!-- Particle Background -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav__logo">
+      <div class="nav__logo-emblem">
+        <span class="ashoka-spoke"></span>
+      </div>
+      <div>
+        <span class="nav__logo-text">कमल नाथ</span>
+        <span class="nav__logo-subtitle">जनसेवा</span>
+      </div>
+    </a>
+
+    <div class="nav__links">
+      <a href="index.html" class="nav__link">होम</a>
+      <a href="biography.html" class="nav__link">जीवनी</a>
+      <a href="political-journey.html" class="nav__link">राजनीतिक यात्रा</a>
+      <a href="achievements.html" class="nav__link">उपलब्धियाँ</a>
+      <a href="vision-values.html" class="nav__link">दृष्टि और मूल्य</a>
+      <a href="chhindwara.html" class="nav__link active">छिंदवाड़ा</a>
+      <a href="contact.html" class="nav__link">संपर्क</a>
+      <div class="lang-toggle">
+        <a href="../en/chhindwara.html" class="lang-toggle__btn">EN</a>
+        <a href="chhindwara.html" class="lang-toggle__btn active">HI</a>
+      </div>
+    </div>
+
+    <button class="nav__hamburger" aria-label="मेनू टॉगल करें">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="nav__mobile-overlay">
+    <a href="index.html" class="nav__link">होम</a>
+    <a href="biography.html" class="nav__link">जीवनी</a>
+    <a href="political-journey.html" class="nav__link">राजनीतिक यात्रा</a>
+    <a href="achievements.html" class="nav__link">उपलब्धियाँ</a>
+    <a href="vision-values.html" class="nav__link">दृष्टि और मूल्य</a>
+    <a href="chhindwara.html" class="nav__link active">छिंदवाड़ा</a>
+    <a href="contact.html" class="nav__link">संपर्क</a>
+    <div class="lang-toggle">
+      <a href="../en/chhindwara.html" class="lang-toggle__btn">EN</a>
+      <a href="chhindwara.html" class="lang-toggle__btn active">HI</a>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="page-header__bg">
+      <img src="../images/kamal-nath-chhindwara.jpg" alt="कमल नाथ - छिंदवाड़ा">
+      <div class="page-header__bg-overlay"></div>
+    </div>
+    <div class="page-header__content">
+      <h1 class="page-header__title">छिंदवाड़ा</h1>
+      <p class="page-header__subtitle">हृदयस्थली निर्वाचन क्षेत्र &mdash; परिवर्तन की कहानी</p>
+    </div>
+    <div class="page-header__diagonal"></div>
+  </header>
+
+  <!-- ============================================
+       SECTION 1: छिंदवाड़ा के बारे में
+       ============================================ -->
+  <section class="section section--void">
+    <div class="float-element float-element--circle" style="width:200px;height:200px;top:60px;right:8%;" data-speed="0.05"></div>
+    <div class="float-element float-element--diamond" style="width:40px;height:40px;top:200px;left:5%;" data-speed="0.08"></div>
+
+    <div class="section__container">
+      <div class="grid-asymmetric">
+        <div>
+          <div class="section__header reveal">
+            <p class="section__overline">परिचय</p>
+            <h2 class="section__title">छिंदवाड़ा <span class="gold">के बारे में</span></h2>
+            <div class="gold-sep"></div>
+          </div>
+
+          <div class="prose reveal reveal-delay-1">
+            <p>छिंदवाड़ा मध्य प्रदेश राज्य के दक्षिण-पूर्वी भाग में स्थित एक ऐतिहासिक और सांस्कृतिक रूप से समृद्ध जिला है। सतपुड़ा पर्वत श्रृंखला की गोद में बसा यह जिला प्राकृतिक सौंदर्य, घने वनों और खनिज संपदा से भरपूर है। छिंदवाड़ा का नाम "छिंद" वृक्ष से पड़ा माना जाता है, जो इस क्षेत्र में बहुतायत में पाया जाता है। यह जिला लगभग 11,815 वर्ग किलोमीटर के क्षेत्रफल में फैला हुआ है और इसकी जनसंख्या लगभग 21 लाख से अधिक है।</p>
+
+            <p>छिंदवाड़ा एक आदिवासी बहुल जिला है, जहाँ गोंड, कोरकू और भील जनजातियाँ प्रमुख रूप से निवास करती हैं। इन आदिवासी समुदायों की समृद्ध सांस्कृतिक विरासत, पारंपरिक कला, लोक संगीत और नृत्य इस क्षेत्र की पहचान हैं। यहाँ की संस्कृति में प्रकृति पूजा, वन देवताओं की आराधना और सामुदायिक जीवन की गहरी परंपराएँ जुड़ी हुई हैं। "मड़ई" और "भगोरिया" जैसे पारंपरिक मेले और उत्सव यहाँ की जीवंत संस्कृति का प्रतिबिंब हैं।</p>
+
+            <p>प्राकृतिक संसाधनों की दृष्टि से छिंदवाड़ा अत्यंत धनी है। सतपुड़ा पर्वत श्रृंखला जिले के दक्षिणी भाग में विस्तृत है, जहाँ सागौन, साल, बाँस और अन्य मूल्यवान वृक्षों के घने वन पाए जाते हैं। पेंच राष्ट्रीय उद्यान, जो रुडयार्ड किपलिंग की प्रसिद्ध कृति "द जंगल बुक" की प्रेरणा माना जाता है, इसी जिले में स्थित है। खनिज संपदा में मैंगनीज, बॉक्साइट और चूना पत्थर के भंडार जिले की आर्थिक क्षमता को और बढ़ाते हैं।</p>
+
+            <p>ऐतिहासिक दृष्टि से छिंदवाड़ा का महत्व अत्यंत प्राचीन है। गोंडवाना साम्राज्य के अंतर्गत यह क्षेत्र गोंड राजाओं का गढ़ रहा है। देवगढ़ का किला, जो गोंड वास्तुकला का उत्कृष्ट नमूना है, इस क्षेत्र के गौरवशाली अतीत का साक्षी है। ब्रिटिश काल में भी छिंदवाड़ा प्रशासनिक केंद्र के रूप में महत्वपूर्ण रहा। स्वतंत्रता आंदोलन में भी यहाँ के लोगों ने सक्रिय भागीदारी निभाई।</p>
+
+            <p>कृषि इस जिले की अर्थव्यवस्था की रीढ़ है। छिंदवाड़ा विशेष रूप से संतरों की खेती के लिए प्रसिद्ध है और इसे "मध्य प्रदेश का नागपुर" भी कहा जाता है। गेहूँ, सोयाबीन, ज्वार, मक्का और दलहन यहाँ की प्रमुख फसलें हैं। हालाँकि, स्वतंत्रता के बाद कई दशकों तक छिंदवाड़ा विकास की दौड़ में पिछड़ा रहा — बुनियादी ढाँचे की कमी, शिक्षा और स्वास्थ्य सुविधाओं का अभाव, और रोजगार के अवसरों की कमी ने इस क्षेत्र को पिछड़ा बनाए रखा। यही वह पृष्ठभूमि थी जिसमें 1980 में कमल नाथ ने छिंदवाड़ा से अपनी राजनीतिक यात्रा शुरू की।</p>
+          </div>
+        </div>
+
+        <div class="reveal reveal--right reveal-delay-2">
+          <div class="img-diagonal img-reveal" style="margin-bottom: var(--space-md);">
+            <img src="../images/kamal-nath-chhindwara.jpg" alt="कमल नाथ - छिंदवाड़ा की जनता के साथ" loading="lazy">
+          </div>
+
+          <div class="stats-row" style="margin-top: var(--space-lg); border-top: 1px solid var(--color-border); border-bottom: none;">
+            <div class="stat-item">
+              <div class="stat-item__number" data-count="11815">11815</div>
+              <div class="stat-item__label">वर्ग कि.मी. क्षेत्रफल</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-item__number text-gold">सतपुड़ा</div>
+              <div class="stat-item__label">पर्वत श्रृंखला</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 2: कमल नाथ-छिंदवाड़ा का बंधन
+       ============================================ -->
+  <section class="section section--dark">
+    <div class="section__diagonal-top"></div>
+    <span class="section__bg-number">II</span>
+    <div class="float-element float-element--circle" style="width:150px;height:150px;bottom:100px;left:3%;" data-speed="-0.04"></div>
+    <div class="float-element float-element--diamond" style="width:45px;height:45px;top:180px;right:7%;" data-speed="0.06"></div>
+
+    <div class="section__container">
+      <div class="section__header text-center reveal">
+        <p class="section__overline">अटूट रिश्ता</p>
+        <h2 class="section__title">कमल नाथ-छिंदवाड़ा का <span class="gold">अटूट बंधन</span></h2>
+        <div class="gold-sep gold-sep--center"></div>
+      </div>
+
+      <div class="grid-halves">
+        <div class="reveal reveal--left reveal-delay-1">
+          <div class="card card--diagonal glow-card">
+            <div class="card__title">बंधन की शुरुआत</div>
+            <div class="card__text">
+              <p>जब 1980 में कमल नाथ ने छिंदवाड़ा से चुनाव लड़ने का निर्णय लिया, तो राजनीतिक हलकों में कई लोग आश्चर्यचकित हुए। दिल्ली की राजनीतिक गलियारों में पले-बढ़े, शहरी पृष्ठभूमि वाले एक युवा नेता का एक दूरदराज के आदिवासी बहुल निर्वाचन क्षेत्र को चुनना असामान्य था। लेकिन कमल नाथ ने छिंदवाड़ा में वह देखा जो औरों को दिखाई नहीं दिया — अपार संभावनाओं से भरा एक क्षेत्र, अटूट साहस वाले लोग, और विकास की प्यासी एक भूमि जिसे सत्ता के गलियारों में एक सच्चे पैरोकार की आवश्यकता थी।</p>
+              <p style="margin-top:1em;">उनका यह निर्णय कोई राजनीतिक गणना नहीं थी, बल्कि यह एक ऐसी भूमि और उसके लोगों के प्रति सच्ची प्रतिबद्धता थी जो आने वाले दशकों में बार-बार सिद्ध होनी थी। कमल नाथ ने छिंदवाड़ा को केवल एक निर्वाचन क्षेत्र नहीं, बल्कि अपना घर, अपना परिवार और अपनी कर्मभूमि बनाया।</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal--right reveal-delay-2">
+          <div class="card card--diagonal glow-card">
+            <div class="card__title">"छिंदवाड़ा के महाराजा"</div>
+            <div class="card__text">
+              <p>लगातार नौ चुनावी जीत (1980 से 2014 तक) ने कमल नाथ को "छिंदवाड़ा के महाराजा" की उपाधि दिलाई। यह उपाधि किसी प्रोटोकॉल या औपचारिकता से नहीं, बल्कि जनता ने स्वयं प्रदान की। यह उपाधि उनके द्वारा जिले के कायाकल्प और लोगों के जीवन में लाए गए अभूतपूर्व परिवर्तन की मान्यता है।</p>
+              <p style="margin-top:1em;">एक ऐसे देश में जहाँ सत्ता-विरोधी लहर (anti-incumbency) एक शक्तिशाली बल है और जहाँ मतदाता जल्दी से कथित विफलताओं को दंडित करते हैं, कमल नाथ की लगातार नौ जीतों की अटूट शृंखला उस विश्वास का प्रमाण है जो उन्होंने अर्जित किया और उन परिणामों का साक्ष्य है जो उन्होंने प्रदान किए। यह रिश्ता चुनावी राजनीति से कहीं आगे, एक गहरे भावनात्मक और सामाजिक बंधन का प्रतीक है।</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-halves" style="margin-top: var(--space-md);">
+        <div class="reveal reveal--left reveal-delay-3">
+          <div class="card card--diagonal glow-card">
+            <div class="card__title">व्यक्तिगत संबंध और नियमित यात्राएँ</div>
+            <div class="card__text">
+              <p>कमल नाथ और छिंदवाड़ा के लोगों का रिश्ता अधिकांश राजनेता-निर्वाचन क्षेत्र संबंधों की लेन-देन प्रकृति से परे है। चार दशकों से अधिक समय में, कमल नाथ जिले के सामाजिक ताने-बाने में ऐसे बुने गए हैं कि उन्हें अलग करना असंभव है। वे केवल चुनाव के समय ही नहीं, बल्कि त्योहारों में, संकट के समय में, और समुदाय के दैनिक जीवन में उपस्थित रहते हैं।</p>
+              <p style="margin-top:1em;">स्थानीय मुद्दों की उनकी गहरी समझ — चाहे वह किसानों की फसल की चिंता हो, आदिवासी अधिकारों का प्रश्न हो, या युवाओं के रोजगार का सवाल — ने उन्हें जनता के दिलों में एक विशेष स्थान दिलाया है। छिंदवाड़ा के लोग उन्हें केवल अपना प्रतिनिधि नहीं मानते, वे उन्हें अपनों में से एक मानते हैं।</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal--right reveal-delay-4">
+          <div class="card card--diagonal glow-card">
+            <div class="card__title">विरासत की निरंतरता: नकुल नाथ</div>
+            <div class="card__text">
+              <p>2019 में कमल नाथ ने मध्य प्रदेश के मुख्यमंत्री के रूप में दायित्व संभालने के बाद, अपने पुत्र नकुल नाथ के लिए छिंदवाड़ा लोकसभा क्षेत्र से रास्ता बनाया। नकुल नाथ ने 2019 के आम चुनाव में छिंदवाड़ा से विजय प्राप्त की और सांसद बने। यह केवल वंशवादी उत्तराधिकार नहीं था — यह नाथ परिवार की छिंदवाड़ा के विकास और कल्याण के प्रति गहरी प्रतिबद्धता की सच्ची निरंतरता थी।</p>
+              <p style="margin-top:1em;">नकुल नाथ ने अपने पिता की विरासत को आगे बढ़ाते हुए छिंदवाड़ा के विकास कार्यों को नई गति प्रदान की है। युवा ऊर्जा और आधुनिक दृष्टिकोण के साथ, वे छिंदवाड़ा को 21वीं सदी की चुनौतियों के लिए तैयार कर रहे हैं, जबकि उस गहरे जनता-नेता संबंध को बनाए रख रहे हैं जो उनके पिता ने स्थापित किया।</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       QUOTE BLOCK
+       ============================================ -->
+  <section class="section section--void">
+    <div class="section__container section__container--narrow">
+      <div class="reveal">
+        <div class="quote-block">
+          <p class="quote-block__text">छिंदवाड़ा मेरे लिए केवल एक निर्वाचन क्षेत्र नहीं है; यह मेरा घर है, मेरा परिवार है, और वह दर्पण है जिसमें मुझे समस्त भारत की आकांक्षाएँ और संघर्ष प्रतिबिंबित दिखते हैं।</p>
+          <p class="quote-block__attribution">&mdash; कमल नाथ</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 3: चुनावी इतिहास (Timeline)
+       ============================================ -->
+  <section class="section section--dark">
+    <div class="section__diagonal-top"></div>
+    <span class="section__bg-number">III</span>
+    <div class="float-element float-element--circle" style="width:180px;height:180px;top:10%;left:-60px;" data-speed="0.04"></div>
+    <div class="float-element float-element--diamond" style="width:35px;height:35px;bottom:200px;right:4%;" data-speed="-0.06"></div>
+
+    <div class="section__container">
+      <div class="section__header text-center reveal">
+        <p class="section__overline">ऐतिहासिक विजय यात्रा</p>
+        <h2 class="section__title">चुनावी <span class="gold">इतिहास</span></h2>
+        <div class="gold-sep gold-sep--center"></div>
+      </div>
+
+      <!-- Stats Row -->
+      <div class="stats-row reveal reveal-delay-1">
+        <div class="stat-item">
+          <div class="stat-item__number" data-count="9">0</div>
+          <div class="stat-item__label">लगातार जीत</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-item__number" data-count="34">0</div>
+          <div class="stat-item__label">प्रतिनिधित्व के वर्ष</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-item__number" data-count="1980">0</div>
+          <div class="stat-item__label">पहली जीत का वर्ष</div>
+        </div>
+      </div>
+
+      <!-- Timeline -->
+      <div class="timeline reveal reveal-delay-2">
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__year">1980</div>
+          <div class="timeline__title">पहली ऐतिहासिक जीत</div>
+          <div class="timeline__text">इंदिरा गांधी की सत्ता में वापसी की लहर में कमल नाथ ने छिंदवाड़ा से पहली बार लोकसभा चुनाव जीता। यह एक नए युग की शुरुआत थी — एक ऐसे संबंध की नींव जो भारतीय लोकतंत्र में अद्वितीय साबित होने वाला था। एक युवा, ऊर्जावान और दूरदर्शी नेता ने एक पिछड़े जिले को अपनी कर्मभूमि बनाने का संकल्प लिया।</div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__year">1984</div>
+          <div class="timeline__title">राजीव लहर में पुनर्निर्वाचन</div>
+          <div class="timeline__text">इंदिरा गांधी की दुखद हत्या के बाद उमड़ी सहानुभूति लहर में कमल नाथ ने भारी बहुमत से पुनर्निर्वाचन प्राप्त किया। राजीव गांधी सरकार में उन्हें महत्वपूर्ण जिम्मेदारियाँ मिलीं और छिंदवाड़ा के विकास के लिए केंद्रीय संसाधनों को आकर्षित करने की उनकी क्षमता और मजबूत हुई।</div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__year">1989</div>
+          <div class="timeline__title">विपक्षी लहर में भी विजय</div>
+          <div class="timeline__text">1989 का चुनाव कांग्रेस के लिए कठिन था। बोफोर्स विवाद और विपक्षी एकता ने राष्ट्रीय स्तर पर कांग्रेस को पराजित किया, लेकिन छिंदवाड़ा में कमल नाथ की पकड़ अडिग रही। जहाँ देश भर में कांग्रेस प्रत्याशी हार रहे थे, वहाँ छिंदवाड़ा में कमल नाथ ने अपनी जीत सुनिश्चित की — यह उनके व्यक्तिगत जनाधार की ताकत का पहला बड़ा प्रमाण था।</div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__year">1991</div>
+          <div class="timeline__title">सत्ता-विरोधी लहर के बावजूद जीत</div>
+          <div class="timeline__text">अस्थिर राजनीतिक माहौल और राजीव गांधी की दुखद हत्या से उत्पन्न भावनात्मक उथल-पुथल के बीच हुए चुनाव में कमल नाथ ने छिंदवाड़ा से एक बार फिर जीत हासिल की। इस जीत ने साबित किया कि राष्ट्रीय परिस्थितियाँ चाहे जो भी हों, छिंदवाड़ा और कमल नाथ का रिश्ता अटूट है।</div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__year">1996</div>
+          <div class="timeline__title">निरंतर प्रभुत्व</div>
+          <div class="timeline__text">खंडित राजनीतिक परिदृश्य और क्षेत्रीय दलों के उभार के दौर में भी कमल नाथ ने छिंदवाड़ा पर अपनी पकड़ बनाए रखी। पाँचवीं लगातार जीत ने उन्हें इस क्षेत्र के सबसे प्रभावशाली नेता के रूप में स्थापित कर दिया। विकास कार्यों की दिखने वाली प्रगति ने जनता का विश्वास और मजबूत किया।</div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__year">1998</div>
+          <div class="timeline__title">खंडित राजनीति में जीत</div>
+          <div class="timeline__text">भाजपा के राष्ट्रीय उत्थान और कांग्रेस के कमजोर प्रदर्शन के बावजूद, कमल नाथ ने छिंदवाड़ा में अपनी अजेय स्थिति बनाए रखी। यह जीत इस बात का प्रमाण थी कि छिंदवाड़ा में चुनाव पार्टी के आधार पर नहीं, बल्कि कमल नाथ के व्यक्तित्व और उनके विकास कार्यों के आधार पर लड़ा और जीता जाता है।</div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__year">1999</div>
+          <div class="timeline__title">आरामदायक पुनर्निर्वाचन</div>
+          <div class="timeline__text">कारगिल युद्ध के बाद के राष्ट्रवादी माहौल में, जहाँ भाजपा को राष्ट्रीय स्तर पर लाभ मिला, कमल नाथ ने छिंदवाड़ा में एक बार फिर सहज जीत दर्ज की। सातवीं लगातार जीत ने "छिंदवाड़ा के महाराजा" की उपाधि को और पुष्ट किया। दो दशकों की अनवरत सेवा ने एक अभेद्य जनाधार तैयार कर दिया था।</div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__year">2004</div>
+          <div class="timeline__title">जीत और केंद्रीय मंत्री बने</div>
+          <div class="timeline__text">कमल नाथ ने न केवल छिंदवाड़ा से भारी बहुमत से जीत हासिल की, बल्कि कांग्रेस के नेतृत्व वाली UPA सरकार में केंद्रीय वाणिज्य एवं उद्योग मंत्री के रूप में नियुक्त हुए। इस पद से उन्होंने न केवल राष्ट्रीय, बल्कि अंतरराष्ट्रीय स्तर पर भारत का प्रतिनिधित्व किया। WTO वार्ताओं में उनकी भूमिका ने उन्हें वैश्विक मंच पर प्रतिष्ठा दिलाई।</div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__year">2009</div>
+          <div class="timeline__title">भारी जीत</div>
+          <div class="timeline__text">UPA सरकार की सफलताओं और अपने स्वयं के प्रभावशाली कार्यकाल के आधार पर, कमल नाथ ने 2009 में छिंदवाड़ा से अपनी सबसे बड़ी जीत में से एक दर्ज की। भारी मतों के अंतर ने यह स्पष्ट किया कि तीन दशकों बाद भी जनता का उनमें विश्वास न केवल कायम है, बल्कि और मजबूत हुआ है। उन्हें पुनः केंद्रीय मंत्रिमंडल में शामिल किया गया।</div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__year">2014</div>
+          <div class="timeline__title">कांग्रेस की राष्ट्रीय हार के बावजूद जीत</div>
+          <div class="timeline__text">2014 में नरेंद्र मोदी की अगुआई में भाजपा की ऐतिहासिक लहर में कांग्रेस को देश भर में विनाशकारी हार का सामना करना पड़ा। लेकिन छिंदवाड़ा एक बार फिर अपवाद बना। जहाँ कांग्रेस के दिग्गज नेता अपनी सीटें हार रहे थे, वहाँ कमल नाथ ने छिंदवाड़ा को बचाए रखा। यह नौवीं लगातार जीत थी — भारतीय संसदीय इतिहास में एक अद्वितीय उपलब्धि।</div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__year">2019</div>
+          <div class="timeline__title">विरासत का हस्तांतरण: नकुल नाथ</div>
+          <div class="timeline__text">2018 में मध्य प्रदेश विधानसभा चुनाव में कांग्रेस की जीत के बाद कमल नाथ ने मुख्यमंत्री पद संभाला। 2019 के लोकसभा चुनाव में उन्होंने अपने पुत्र नकुल नाथ के लिए छिंदवाड़ा से रास्ता बनाया। नकुल नाथ ने जनता का विश्वास जीतकर छिंदवाड़ा की सीट पर विजय प्राप्त की, जिससे नाथ परिवार और छिंदवाड़ा का अनूठा संबंध अगली पीढ़ी तक जारी रहा।</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 4: छिंदवाड़ा का कायाकल्प
+       ============================================ -->
+  <section class="section section--void">
+    <span class="section__bg-number">IV</span>
+    <div class="float-element float-element--circle" style="width:220px;height:220px;top:5%;right:-80px;" data-speed="0.03"></div>
+    <div class="float-element float-element--diamond" style="width:50px;height:50px;bottom:150px;left:6%;" data-speed="-0.05"></div>
+
+    <div class="section__container">
+      <div class="section__header text-center reveal">
+        <p class="section__overline">विकास की गाथा</p>
+        <h2 class="section__title">छिंदवाड़ा का <span class="gold">कायाकल्प</span></h2>
+        <div class="gold-sep gold-sep--center"></div>
+      </div>
+
+      <div class="prose reveal reveal-delay-1" style="max-width: var(--container-narrow); margin: 0 auto var(--space-lg);">
+        <p>कमल नाथ के प्रतिनिधित्व में छिंदवाड़ा ने एक अभूतपूर्व कायाकल्प देखा। एक पिछड़े, उपेक्षित जिले से एक विकसित और आत्मनिर्भर क्षेत्र बनने की यात्रा किसी चमत्कार से कम नहीं है। इस परिवर्तन के विभिन्न आयामों को समझना आवश्यक है:</p>
+      </div>
+
+      <!-- A. सड़क और कनेक्टिविटी -->
+      <div class="grid-halves">
+        <div class="reveal reveal--left reveal-delay-1">
+          <div class="card card--diagonal glow-card">
+            <div class="card__title">A. सड़क और कनेक्टिविटी</div>
+            <div class="card__text">
+              <p>कमल नाथ ने छिंदवाड़ा की कनेक्टिविटी को पूरी तरह बदल दिया। जब वे पहली बार 1980 में यहाँ आए, तो जिले की अधिकांश सड़कें कच्ची थीं और बारिश के मौसम में गाँव महीनों तक कटे रहते थे।</p>
+              <p style="margin-top:0.8em;"><strong>राष्ट्रीय राजमार्ग:</strong> छिंदवाड़ा को नागपुर, भोपाल और जबलपुर से जोड़ने वाले राष्ट्रीय राजमार्गों का निर्माण और उन्नयन कराया गया। NH-47 और NH-26 ने जिले को राष्ट्रीय सड़क नेटवर्क से सीधे जोड़ दिया।</p>
+              <p style="margin-top:0.8em;"><strong>ग्रामीण सड़क नेटवर्क:</strong> प्रधानमंत्री ग्राम सड़क योजना (PMGSY) के तहत सैकड़ों गाँवों को पक्की सड़कों से जोड़ा गया। कमल नाथ ने अपने प्रभाव का उपयोग करके छिंदवाड़ा को इस योजना में प्राथमिकता दिलाई।</p>
+              <p style="margin-top:0.8em;">इन सड़कों ने न केवल यातायात को सुगम बनाया, बल्कि गाँवों को बाजारों, अस्पतालों और शिक्षण संस्थाओं से जोड़कर ग्रामीण अर्थव्यवस्था को मजबूती प्रदान की।</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal--right reveal-delay-2">
+          <div class="card card--diagonal glow-card">
+            <div class="card__title">B. शिक्षा का विस्तार</div>
+            <div class="card__text">
+              <p>छिंदवाड़ा में शिक्षा का परिदृश्य कमल नाथ के कार्यकाल में पूरी तरह बदल गया। जहाँ पहले उच्च शिक्षा के लिए विद्यार्थियों को नागपुर या भोपाल जाना पड़ता था, वहाँ अब जिले में ही विश्वस्तरीय संस्थान उपलब्ध हैं।</p>
+              <p style="margin-top:0.8em;"><strong>इंजीनियरिंग कॉलेज:</strong> शासकीय इंजीनियरिंग कॉलेज की स्थापना से आदिवासी और ग्रामीण युवाओं को तकनीकी शिक्षा का अवसर मिला।</p>
+              <p style="margin-top:0.8em;"><strong>मेडिकल कॉलेज:</strong> छिंदवाड़ा में मेडिकल कॉलेज की स्थापना ने न केवल चिकित्सा शिक्षा, बल्कि जिले की स्वास्थ्य सेवाओं में भी क्रांतिकारी सुधार लाया।</p>
+              <p style="margin-top:0.8em;"><strong>ITI और व्यावसायिक प्रशिक्षण:</strong> औद्योगिक प्रशिक्षण संस्थानों (ITI) ने युवाओं को कौशल विकास और रोजगार के अवसर प्रदान किए।</p>
+              <p style="margin-top:0.8em;">साक्षरता दर में उल्लेखनीय सुधार हुआ, विशेषकर महिला साक्षरता और आदिवासी समुदायों में शिक्षा के प्रसार ने सामाजिक परिवर्तन की नींव रखी।</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-halves" style="margin-top: var(--space-md);">
+        <div class="reveal reveal--left reveal-delay-1">
+          <div class="card card--diagonal glow-card">
+            <div class="card__title">C. स्वास्थ्य सेवाएँ</div>
+            <div class="card__text">
+              <p>स्वास्थ्य सेवाओं के क्षेत्र में छिंदवाड़ा में क्रांतिकारी बदलाव आया। पहले जहाँ साधारण बीमारियों के इलाज के लिए भी लोगों को लंबी दूरी तय करनी पड़ती थी, वहाँ अब एक सुदृढ़ स्वास्थ्य ढाँचा खड़ा है।</p>
+              <p style="margin-top:0.8em;"><strong>जिला अस्पताल:</strong> आधुनिक उपकरणों और विशेषज्ञ चिकित्सकों से सुसज्जित जिला अस्पताल का उन्नयन किया गया, जो अब सैकड़ों बिस्तरों की क्षमता वाला एक बहु-विशेषज्ञता अस्पताल बन चुका है।</p>
+              <p style="margin-top:0.8em;"><strong>प्राथमिक स्वास्थ्य केंद्र:</strong> ग्रामीण क्षेत्रों में प्राथमिक स्वास्थ्य केंद्रों (PHC) और उप-स्वास्थ्य केंद्रों का जाल बिछाया गया, जिससे दूरदराज के गाँवों में भी बुनियादी स्वास्थ्य सेवाएँ उपलब्ध हुईं।</p>
+              <p style="margin-top:0.8em;">मातृ एवं शिशु मृत्यु दर में कमी, टीकाकरण कवरेज में वृद्धि, और कुपोषण के खिलाफ अभियानों ने जनता के स्वास्थ्य स्तर को ऊँचा उठाया।</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal--right reveal-delay-2">
+          <div class="card card--diagonal glow-card">
+            <div class="card__title">D. उद्योग और अर्थव्यवस्था</div>
+            <div class="card__text">
+              <p>छिंदवाड़ा की अर्थव्यवस्था को केवल कृषि पर निर्भर न रखकर, कमल नाथ ने औद्योगिक विकास और आर्थिक विविधीकरण पर जोर दिया।</p>
+              <p style="margin-top:0.8em;"><strong>औद्योगिक क्षेत्र:</strong> जिले में औद्योगिक क्षेत्रों की स्थापना से विनिर्माण इकाइयों को आकर्षित किया गया, जिससे स्थानीय युवाओं को रोजगार के अवसर मिले।</p>
+              <p style="margin-top:0.8em;"><strong>IT पार्क:</strong> सूचना प्रौद्योगिकी पार्क की परिकल्पना ने छिंदवाड़ा को डिजिटल युग से जोड़ने का मार्ग प्रशस्त किया।</p>
+              <p style="margin-top:0.8em;"><strong>संतरे की खेती:</strong> छिंदवाड़ा अपने संतरों के लिए पूरे देश में प्रसिद्ध है। कमल नाथ ने संतरा उत्पादकों के लिए बेहतर बाजार व्यवस्था, कोल्ड स्टोरेज, और प्रसंस्करण इकाइयों की स्थापना कराई, जिससे किसानों को उनकी उपज का उचित मूल्य मिल सके।</p>
+              <p style="margin-top:0.8em;">खनिज आधारित उद्योगों, लघु एवं कुटीर उद्योगों, और वनोपज प्रसंस्करण ने अर्थव्यवस्था को बहुआयामी बनाया।</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-halves" style="margin-top: var(--space-md);">
+        <div class="reveal reveal--left reveal-delay-1">
+          <div class="card card--diagonal glow-card">
+            <div class="card__title">E. कृषि और सिंचाई</div>
+            <div class="card__text">
+              <p>कृषि छिंदवाड़ा की जीवनरेखा है और कमल नाथ ने इस क्षेत्र में आमूलचूल परिवर्तन लाया।</p>
+              <p style="margin-top:0.8em;"><strong>सिंचाई परियोजनाएँ:</strong> बड़ी और मध्यम सिंचाई परियोजनाओं के माध्यम से हजारों हेक्टेयर कृषि भूमि को सिंचित किया गया। बाँधों, नहरों और चेक डैम के निर्माण ने वर्षा पर निर्भरता को कम किया और किसानों को वर्ष भर खेती करने का अवसर दिया।</p>
+              <p style="margin-top:0.8em;"><strong>आधुनिक कृषि तकनीक:</strong> ड्रिप इरिगेशन, स्प्रिंकलर सिंचाई, उन्नत बीज किस्मों और जैविक खेती को बढ़ावा दिया गया। कृषि विज्ञान केंद्रों ने किसानों को नवीनतम तकनीकों का प्रशिक्षण प्रदान किया।</p>
+              <p style="margin-top:0.8em;">किसान क्रेडिट कार्ड, फसल बीमा और न्यूनतम समर्थन मूल्य (MSP) की सुविधाओं तक पहुँच सुनिश्चित करने में कमल नाथ ने व्यक्तिगत रुचि ली।</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal--right reveal-delay-2">
+          <div class="card card--diagonal glow-card">
+            <div class="card__title">F. बिजली और बुनियादी ढाँचा</div>
+            <div class="card__text">
+              <p>बुनियादी ढाँचे के विकास ने छिंदवाड़ा को आधुनिक युग में प्रवेश कराया।</p>
+              <p style="margin-top:0.8em;"><strong>विद्युतीकरण:</strong> जिले के लगभग सभी गाँवों का विद्युतीकरण किया गया। जहाँ पहले अंधेरे में डूबे गाँव थे, वहाँ अब रोशनी है। 24 घंटे बिजली की उपलब्धता ने न केवल घरेलू जीवन, बल्कि कृषि और उद्योग को भी गति प्रदान की।</p>
+              <p style="margin-top:0.8em;"><strong>जल आपूर्ति:</strong> शुद्ध पेयजल की व्यवस्था ग्रामीण और शहरी दोनों क्षेत्रों में सुनिश्चित की गई। नलकूपों, हैंडपंपों और पाइपलाइन जल आपूर्ति योजनाओं ने जल संकट को काफी हद तक दूर किया।</p>
+              <p style="margin-top:0.8em;">दूरसंचार, इंटरनेट कनेक्टिविटी, बैंकिंग सेवाएँ और डाक व्यवस्था जैसी सुविधाओं के विस्तार ने छिंदवाड़ा को देश के अन्य विकसित जिलों के बराबर लाने का कार्य किया।</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       QUOTE BLOCK 2
+       ============================================ -->
+  <section class="section section--dark">
+    <div class="section__diagonal-top"></div>
+    <div class="section__container section__container--narrow">
+      <div class="reveal">
+        <div class="quote-block">
+          <p class="quote-block__text">उन्हें छिंदवाड़ा का महाराजा कहा जाता है, उनकी जीवनशैली की भव्यता के लिए नहीं, बल्कि उन लोगों के प्रति उनकी प्रतिबद्धता की संप्रभुता के लिए जिनकी वे सेवा करते हैं।</p>
+          <p class="quote-block__attribution">&mdash; राजनीतिक पर्यवेक्षक, कमल नाथ पर</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 5: आज का छिंदवाड़ा
+       ============================================ -->
+  <section class="section section--surface">
+    <span class="section__bg-number">V</span>
+    <div class="float-element float-element--circle" style="width:160px;height:160px;top:15%;left:5%;" data-speed="0.04"></div>
+    <div class="float-element float-element--diamond" style="width:55px;height:55px;bottom:120px;right:8%;" data-speed="-0.07"></div>
+
+    <div class="section__container">
+      <div class="section__header text-center reveal">
+        <p class="section__overline">वर्तमान और भविष्य</p>
+        <h2 class="section__title">आज का <span class="gold">छिंदवाड़ा</span></h2>
+        <div class="gold-sep gold-sep--center"></div>
+      </div>
+
+      <div class="prose reveal reveal-delay-1" style="max-width: var(--container-narrow); margin: 0 auto;">
+        <h3>विकास की वर्तमान स्थिति</h3>
+        <p>आज छिंदवाड़ा मध्य प्रदेश के सबसे विकसित जिलों में से एक है — एक ऐसा परिवर्तन जो चार दशक पहले अकल्पनीय था। जो जिला कभी पिछड़ेपन और उपेक्षा का पर्याय था, वह अब विकास के एक आदर्श मॉडल के रूप में जाना जाता है।</p>
+
+        <p>शिक्षा के क्षेत्र में, छिंदवाड़ा अब इंजीनियरिंग, मेडिकल, प्रबंधन और व्यावसायिक प्रशिक्षण के संस्थानों से सुसज्जित है। हजारों युवा अब बिना जिला छोड़े उच्च शिक्षा प्राप्त कर रहे हैं। स्वास्थ्य सेवाओं में, आधुनिक अस्पताल और प्राथमिक स्वास्थ्य केंद्रों का नेटवर्क जनता को गुणवत्तापूर्ण चिकित्सा सेवा प्रदान कर रहा है।</p>
+
+        <p>सड़कों और कनेक्टिविटी में हुए सुधार ने छिंदवाड़ा को मध्य भारत के प्रमुख शहरों से जोड़ दिया है। बिजली, पानी और दूरसंचार जैसी बुनियादी सुविधाएँ अब दूरदराज के गाँवों तक पहुँच रही हैं। कृषि क्षेत्र में सिंचाई सुविधाओं और आधुनिक तकनीकों ने किसानों की आय और उत्पादकता को बढ़ाया है।</p>
+
+        <h3>आदर्श निर्वाचन क्षेत्र</h3>
+        <p>छिंदवाड़ा इस बात का जीवंत उदाहरण है कि एक समर्पित जनप्रतिनिधि किसी क्षेत्र का कायाकल्प कर सकता है। कमल नाथ ने सिद्ध किया कि राजनीति केवल सत्ता का खेल नहीं है, बल्कि यह जनसेवा और विकास का माध्यम हो सकती है। छिंदवाड़ा का मॉडल यह दर्शाता है कि जब एक नेता के पास दृष्टि, समर्पण और जनता का विश्वास हो, तो सबसे पिछड़े क्षेत्र को भी विकास की ऊँचाइयों तक ले जाया जा सकता है।</p>
+
+        <p>आज छिंदवाड़ा न केवल मध्य प्रदेश के, बल्कि पूरे भारत के लिए एक प्रेरणा है — एक ऐसा निर्वाचन क्षेत्र जो बताता है कि लोकतंत्र में सच्ची जनसेवा क्या हासिल कर सकती है। अन्य निर्वाचन क्षेत्रों के नेताओं और कार्यकर्ताओं के लिए छिंदवाड़ा एक प्रकाशस्तंभ है, जो दिशा दिखाता है कि विकास का सही मार्ग क्या है।</p>
+      </div>
+
+      <div class="grid-thirds reveal reveal-delay-2" style="margin-top: var(--space-lg);">
+        <div class="card card--diagonal glow-card">
+          <div class="card__title">डिजिटल छिंदवाड़ा</div>
+          <div class="card__text">
+            <p>डिजिटल इंडिया अभियान के तहत छिंदवाड़ा में इंटरनेट कनेक्टिविटी, ई-गवर्नेंस और डिजिटल साक्षरता का विस्तार हो रहा है। कॉमन सर्विस सेंटर (CSC) के माध्यम से ग्रामीण क्षेत्रों में भी सरकारी सेवाएँ डिजिटल रूप से उपलब्ध हो रही हैं।</p>
+          </div>
+        </div>
+
+        <div class="card card--diagonal glow-card">
+          <div class="card__title">पर्यटन की संभावनाएँ</div>
+          <div class="card__text">
+            <p>पेंच राष्ट्रीय उद्यान, पातालकोट घाटी, देवगढ़ किला और तामिया हिल स्टेशन जैसे प्राकृतिक और ऐतिहासिक स्थल छिंदवाड़ा को एक प्रमुख पर्यटन गंतव्य बनाने की क्षमता रखते हैं। ईको-टूरिज्म और हेरिटेज टूरिज्म के विकास पर ध्यान दिया जा रहा है।</p>
+          </div>
+        </div>
+
+        <div class="card card--diagonal glow-card">
+          <div class="card__title">युवा और रोजगार</div>
+          <div class="card__text">
+            <p>कौशल विकास कार्यक्रमों, स्टार्टअप इकोसिस्टम और औद्योगिक विकास के माध्यम से छिंदवाड़ा के युवाओं को रोजगार के नए अवसर प्रदान किए जा रहे हैं। स्थानीय स्तर पर उद्यमिता को बढ़ावा देने के प्रयास जारी हैं।</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 6: जनता का दृष्टिकोण
+       ============================================ -->
+  <section class="section section--dark">
+    <div class="section__diagonal-top"></div>
+    <span class="section__bg-number">VI</span>
+    <div class="float-element float-element--circle" style="width:140px;height:140px;bottom:80px;right:10%;" data-speed="-0.03"></div>
+
+    <div class="section__container">
+      <div class="section__header text-center reveal">
+        <p class="section__overline">भावनात्मक बंधन</p>
+        <h2 class="section__title">जनता का <span class="gold">दृष्टिकोण</span></h2>
+        <div class="gold-sep gold-sep--center"></div>
+      </div>
+
+      <div class="prose reveal reveal-delay-1" style="max-width: var(--container-narrow); margin: 0 auto;">
+        <p>छिंदवाड़ा और कमल नाथ का रिश्ता भारतीय लोकतंत्र में नेता और जनता के बीच के सबसे गहरे भावनात्मक बंधनों में से एक है। यह संबंध किसी राजनीतिक रणनीति या चुनावी गणित का परिणाम नहीं है — यह दशकों की सच्ची सेवा, समर्पण और परस्पर विश्वास से उपजा एक अनूठा रिश्ता है।</p>
+
+        <p>छिंदवाड़ा के किसान बताते हैं कि कैसे कमल नाथ जी ने सिंचाई परियोजनाओं के माध्यम से उनके सूखे खेतों में हरियाली लाई। आदिवासी समुदाय के लोग याद करते हैं कि कैसे उन्होंने वन अधिकारों और जमीनी हकों के लिए लड़ाई लड़ी। महिलाएँ बताती हैं कि कैसे शिक्षा और स्वास्थ्य सुविधाओं ने उनके और उनके बच्चों के जीवन को बदला। युवा स्वीकार करते हैं कि रोजगार के अवसरों और शैक्षणिक संस्थानों ने उन्हें पलायन से बचाया और घर पर ही भविष्य बनाने का अवसर दिया।</p>
+
+        <p>छिंदवाड़ा में चुनाव लोगों के लिए केवल मतदान नहीं है — यह उस विश्वास को पुनर्स्थापित करने का अवसर है जो वे अपने नेता में रखते हैं। नौ बार लगातार जीत इस बात का सबसे शक्तिशाली प्रमाण है कि जनता ने कमल नाथ को न केवल स्वीकार किया, बल्कि अपने हृदय में एक अमिट स्थान दिया।</p>
+
+        <p>कमल नाथ के लिए भी छिंदवाड़ा केवल एक राजनीतिक आधार नहीं, बल्कि उनकी पहचान का अभिन्न अंग है। उनके शब्दों में, "जब मैं छिंदवाड़ा में होता हूँ, तो मैं घर पर होता हूँ। यहाँ की मिट्टी की खुशबू, लोगों की मुस्कान, और बच्चों की आँखों में चमकता भविष्य — यही मेरी प्रेरणा है, यही मेरी ऊर्जा का स्रोत है।"</p>
+
+        <p>यह भावनात्मक बंधन पीढ़ियों से चला आ रहा है। जो बुजुर्ग 1980 में कमल नाथ को पहली बार वोट देने गए थे, उनके पोते-पोतियाँ आज नकुल नाथ को अपना प्रतिनिधि मानते हैं। यह निरंतरता भारतीय लोकतंत्र में विरल है और छिंदवाड़ा-कमल नाथ संबंध को एक अद्वितीय राजनीतिक और सामाजिक घटना बनाती है।</p>
+      </div>
+
+      <!-- Final Stats Row -->
+      <div class="stats-row reveal reveal-delay-2" style="margin-top: var(--space-lg);">
+        <div class="stat-item">
+          <div class="stat-item__number" data-count="9">0</div>
+          <div class="stat-item__label">लगातार चुनावी जीत</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-item__number" data-count="34">0</div>
+          <div class="stat-item__label">प्रतिनिधित्व के वर्ष</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-item__number" data-count="11815">0</div>
+          <div class="stat-item__label">वर्ग कि.मी. क्षेत्रफल</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-item__number" data-count="21" data-suffix=" लाख+">0</div>
+          <div class="stat-item__label">जनसंख्या</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CLOSING TICKER
+       ============================================ -->
+  <div class="ticker" style="position: relative; z-index: 1;">
+    <div class="ticker__inner">
+      <span class="ticker__item">छिंदवाड़ा <span class="dot"></span></span>
+      <span class="ticker__item">विकास <span class="dot"></span></span>
+      <span class="ticker__item">जनसेवा <span class="dot"></span></span>
+      <span class="ticker__item">कमल नाथ <span class="dot"></span></span>
+      <span class="ticker__item">प्रतिबद्धता <span class="dot"></span></span>
+      <span class="ticker__item">परिवर्तन <span class="dot"></span></span>
+    </div>
+  </div>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-name">कमल नाथ</div>
+          <p class="footer__brand-text">भारत की जनता की सेवा का एक जीवनकाल। नौ बार के सांसद, पूर्व केंद्रीय मंत्री, और मध्य प्रदेश के पूर्व मुख्यमंत्री।</p>
+        </div>
+        <div>
+          <div class="footer__col-title">नेविगेट करें</div>
+          <a href="index.html" class="footer__col-link">होम</a>
+          <a href="biography.html" class="footer__col-link">जीवनी</a>
+          <a href="political-journey.html" class="footer__col-link">राजनीतिक यात्रा</a>
+          <a href="achievements.html" class="footer__col-link">उपलब्धियाँ</a>
+        </div>
+        <div>
+          <div class="footer__col-title">और जानें</div>
+          <a href="vision-values.html" class="footer__col-link">दृष्टि और मूल्य</a>
+          <a href="chhindwara.html" class="footer__col-link">छिंदवाड़ा</a>
+          <a href="contact.html" class="footer__col-link">संपर्क</a>
+        </div>
+        <div>
+          <div class="footer__col-title">भाषा</div>
+          <a href="../en/chhindwara.html" class="footer__col-link">English</a>
+          <a href="chhindwara.html" class="footer__col-link">हिन्दी</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__credit">Designed and Managed by <a href="https://www.creaadesigns.com/" target="_blank" rel="noopener">Creea Designs</a> and Digant Sharma, +91-9920808363, im@digantsharma.com</div>
+        <div class="footer__copyright">&copy; 2024 कमल नाथ. सर्वाधिकार सुरक्षित।</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/particles.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
