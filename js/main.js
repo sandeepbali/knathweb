@@ -5,6 +5,9 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  // Mark JS as loaded for CSS fallback scoping
+  document.documentElement.classList.add('js-loaded')
+
   // --- Loading Screen ---
   const loader = document.querySelector('.loader')
   if (loader) {
@@ -150,6 +153,75 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     })
   })
+
+  // --- Timeline: Auto-wrap milestones with node/connector/card structure ---
+  document.querySelectorAll('.milestones .milestone').forEach(ms => {
+    // Only wrap if not already wrapped
+    if (ms.querySelector('.milestone__card')) return
+
+    // Create node
+    const node = document.createElement('div')
+    node.className = 'milestone__node'
+
+    // Create connector
+    const connector = document.createElement('div')
+    connector.className = 'milestone__connector'
+
+    // Wrap existing children in a card div
+    const card = document.createElement('div')
+    card.className = 'milestone__card'
+    while (ms.firstChild) {
+      card.appendChild(ms.firstChild)
+    }
+
+    ms.appendChild(node)
+    ms.appendChild(connector)
+    ms.appendChild(card)
+  })
+
+  // --- Timeline Scroll Animation ---
+  const timelines = document.querySelectorAll('.milestones')
+  timelines.forEach(timeline => {
+    // Observe each milestone for staggered reveal
+    const milestones = timeline.querySelectorAll('.milestone')
+    const milestoneObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('milestone--visible')
+          milestoneObserver.unobserve(entry.target)
+        }
+      })
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' })
+
+    milestones.forEach(ms => milestoneObserver.observe(ms))
+
+    // Glow tracking on milestone cards
+    timeline.querySelectorAll('.milestone__card').forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect()
+        card.style.setProperty('--glow-x', (e.clientX - rect.left) + 'px')
+        card.style.setProperty('--glow-y', (e.clientY - rect.top) + 'px')
+      })
+    })
+  })
+
+  // Timeline progress line on scroll
+  if (timelines.length > 0) {
+    function updateTimelineProgress() {
+      timelines.forEach(timeline => {
+        const rect = timeline.getBoundingClientRect()
+        const windowH = window.innerHeight
+        const timelineTop = rect.top
+        const timelineH = rect.height
+        if (timelineTop < windowH && rect.bottom > 0) {
+          const scrolled = Math.min(Math.max((windowH - timelineTop) / (timelineH + windowH), 0), 1)
+          timeline.style.setProperty('--timeline-progress', (scrolled * 100) + '%')
+        }
+      })
+    }
+    window.addEventListener('scroll', updateTimelineProgress, { passive: true })
+    updateTimelineProgress()
+  }
 
   // --- Parallax Effect for Float Elements ---
   const floatElements = document.querySelectorAll('.float-element')
