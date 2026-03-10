@@ -99,10 +99,19 @@ a {
   color: var(--color-gold);
   text-decoration: none;
   transition: color var(--duration-fast) ease;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a:hover {
   color: var(--color-gold-light);
+}
+
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 img {
@@ -264,7 +273,7 @@ ul, ol {
   font-family: var(--font-body);
   font-size: 0.72rem;
   font-weight: 600;
-  padding: 0.3rem 0.8rem;
+  padding: 0.35rem 0.85rem;
   border: none;
   border-radius: 100px;
   cursor: pointer;
@@ -272,9 +281,15 @@ ul, ol {
   color: var(--color-text-muted);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  transition: all var(--duration-fast) ease;
+  transition: background var(--duration-fast) ease, color var(--duration-fast) ease;
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .lang-toggle__btn.active {
@@ -286,6 +301,11 @@ ul, ol {
   color: var(--color-text-primary);
 }
 
+/* Active tap state for mobile */
+.lang-toggle__btn:active:not(.active) {
+  background: rgba(201, 168, 76, 0.15);
+}
+
 /* Mobile Nav Toggle */
 .nav__hamburger {
   display: none;
@@ -293,7 +313,11 @@ ul, ol {
   gap: 5px;
   cursor: pointer;
   z-index: 1001;
-  padding: 8px;
+  padding: 12px;
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
   background: none;
   border: none;
 }
@@ -320,30 +344,44 @@ ul, ol {
 
 /* Mobile Nav Overlay */
 .nav__mobile-overlay {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  height: 100vh;
   height: 100dvh;
   background: var(--color-deep);
   z-index: 999;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
   opacity: 0;
-  transition: opacity var(--duration-normal) var(--ease-out-expo);
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity var(--duration-normal) var(--ease-out-expo),
+              visibility var(--duration-normal);
 }
 
 .nav__mobile-overlay.open {
-  display: flex;
   opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .nav__mobile-overlay .nav__link {
   font-size: 1.3rem;
   letter-spacing: 0.2em;
+  padding: 0.6rem 1rem;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav__mobile-overlay .nav__link:active {
+  color: var(--color-gold);
+  opacity: 0.7;
 }
 
 .nav__mobile-overlay .lang-toggle {
@@ -363,7 +401,7 @@ ul, ol {
 
 .hero__bg-gradient {
   position: absolute;
-  inset: 0;
+  top: 0; right: 0; bottom: 0; left: 0;
   background:
     radial-gradient(ellipse 80% 60% at 20% 50%, rgba(201, 168, 76, 0.08) 0%, transparent 70%),
     radial-gradient(ellipse 60% 80% at 80% 30%, rgba(26, 15, 60, 0.4) 0%, transparent 60%),
@@ -666,7 +704,7 @@ ul, ol {
 .card::after {
   content: '';
   position: absolute;
-  inset: 0;
+  top: 0; right: 0; bottom: 0; left: 0;
   background: linear-gradient(
     105deg,
     transparent 40%,
@@ -947,7 +985,7 @@ ul, ol {
 .milestone__card::after {
   content: '';
   position: absolute;
-  inset: 0;
+  top: 0; right: 0; bottom: 0; left: 0;
   background: radial-gradient(
     600px circle at var(--glow-x, 50%) var(--glow-y, 50%),
     rgba(201, 168, 76, 0.06),
@@ -1155,7 +1193,7 @@ ul, ol {
 .img-duotone::after {
   content: '';
   position: absolute;
-  inset: 0;
+  top: 0; right: 0; bottom: 0; left: 0;
   background: linear-gradient(135deg, rgba(201, 168, 76, 0.1), rgba(12, 12, 30, 0.3));
   mix-blend-mode: multiply;
   pointer-events: none;
@@ -1316,7 +1354,7 @@ ul, ol {
 
 .page-header__bg {
   position: absolute;
-  inset: 0;
+  top: 0; right: 0; bottom: 0; left: 0;
   z-index: 0;
 }
 
@@ -1330,7 +1368,7 @@ ul, ol {
 
 .page-header__bg-overlay {
   position: absolute;
-  inset: 0;
+  top: 0; right: 0; bottom: 0; left: 0;
   background: linear-gradient(180deg,
     var(--color-void) 0%,
     rgba(6, 6, 14, 0.6) 50%,
@@ -1429,7 +1467,8 @@ ul, ol {
   transition: color var(--duration-fast) ease;
 }
 
-.footer__col-link:hover {
+.footer__col-link:hover,
+.footer__col-link:active {
   color: var(--color-gold);
 }
 
@@ -1654,14 +1693,15 @@ html:not(.js-loaded) .milestone {
   color: var(--color-text-primary);
 }
 
-.contact-card__value a:hover {
+.contact-card__value a:hover,
+.contact-card__value a:active {
   color: var(--color-gold);
 }
 
 /* --- Page Transition Overlay --- */
 .page-transition {
   position: fixed;
-  inset: 0;
+  top: 0; right: 0; bottom: 0; left: 0;
   background: var(--color-deep);
   z-index: 9999;
   pointer-events: none;
@@ -1696,7 +1736,7 @@ html:not(.js-loaded) .milestone {
 /* --- Loading Screen --- */
 .loader {
   position: fixed;
-  inset: 0;
+  top: 0; right: 0; bottom: 0; left: 0;
   background: var(--color-void);
   z-index: 10000;
   display: flex;
@@ -1860,6 +1900,12 @@ html:not(.js-loaded) .milestone {
     margin-left: 0;
   }
 
+  .lang-toggle__btn {
+    font-size: 0.78rem;
+    padding: 0.4rem 1rem;
+    min-height: 36px;
+  }
+
   .contact-info {
     grid-template-columns: 1fr;
   }
@@ -1873,6 +1919,21 @@ html:not(.js-loaded) .milestone {
 
   .nav__mobile-overlay {
     height: -webkit-fill-available;
+  }
+
+  /* Prevent Safari from adding default button styles */
+  .nav__hamburger,
+  .lang-toggle__btn {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  /* Fix Safari rendering of clip-path on cards */
+  .card--diagonal {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
   }
 }
 
