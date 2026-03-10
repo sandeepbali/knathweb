@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --- Scroll Reveal (Intersection Observer) ---
-  const revealElements = document.querySelectorAll('.reveal, .timeline__item')
+  const revealElements = document.querySelectorAll('.reveal')
 
   const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
